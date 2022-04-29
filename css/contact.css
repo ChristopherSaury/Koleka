@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#contact{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#contact .map{
+    width: 100%;
+    height: 400px;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+.form-section{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.info{
+    width: 40%;
+    height: auto;
+}
+.info ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+/*********** FORM PART ***************/
+.info-ct{
+    width: 60%;
+    height: auto;
+    border: 1.4px solid gainsboro;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 110px;
+}
+.info-ct h2{
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+.info-ct label,
+.info-ct input,
+.info-ct textarea{
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 15px;
+}
+.info-ct .line{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+}
+.info-ct div{
+    width: 100%;
+}
+.info-ct .line .lastname,
+.info-ct .line .firstname,
+.info-ct .mail,
+.info-ct .subject,
+.info-ct .message{
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+}
+.info-ct input{
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid gainsboro;
+}
+.info-ct textarea{
+    border-radius: 1px;
+    border: 1px solid gainsboro;
+}
+.btn-wrapper{
+    width: 100%;
+    height: auto;
+}
+.btn-wrapper a{
+    padding: 10px 40px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 14px;
+}
+.btn-wrapper a:hover{
+    background-color: rgb(53, 53, 53);
+}
+

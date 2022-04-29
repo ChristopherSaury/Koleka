@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleka | Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop">
+            
+                <div class="logo-container">
+                    <a href="./home.html">     
+                        Koleka
+                        <img class="logo" src="./assets/image/book (1).svg" alt="">
+                    </a>
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li><a href="./home.html">Accueil</a></li>
+                        <li><a href="#">Legendes</a></li>
+                        <li><a href="#">A Propos</a></li>
+                        <li><a href="#">Connexion</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <nav id="mobile-nav">
+            <div class="logo-mobile">
+                Koleka
+            </div>
+                <i class="fas fa-bars" onclick="toggleMobileMenu(this)"></i>
+            <ul class="mobile-list closed-menu">
+                <li><a href="./home.html" class="mobile-link">Accueil</a></li>
+                <li><a href="" class="mobile-link">Legende</a></li>
+                <li><a href="" class="mobile-link">A propos</a></li>
+                <li><a href="./login.html" class="mobile-link">Connexion</a></li>
+                <li><a href="./contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="progress">
+            <span id="progress-value"><i class="fa-solid fa-chevron-up"></i></span>
+    </div>
+
+    <section id="introduction">
+        <div class="medusa">
+            <div class="medusa-intro">
+                <h2>Médusa l'impytoyable gorgone</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo accusantium adipisci omnis! Dolores tempora,
+                    ea fuga asperiores voluptates amet quidem commodi pariatur laboriosam
+                    recusandae praesentium ipsa maxime deleniti incidunt iusto.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit possimus,
+                    fuga illum dolorem blanditiis. Quisquam recusandae, laboriosam facere quibusdam rem esse corrupti obcaecati, delectus doloremque ad possimus aliquam labore!
+                </p>
+                <a href="#" class="btn-discovery">
+                    Découvrir
+                </a>
+            </div>
+        </div>
+        <div class="werewolf">
+            <div class="werewolf-intro reveal">
+                <h2>Les légendes de lycanthrope</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo accusantium adipisci omnis! Dolores tempora,
+                    ea fuga asperiores voluptates amet quidem commodi pariatur laboriosam
+                    recusandae praesentium ipsa maxime deleniti incidunt iusto.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit possimus,
+                    fuga illum dolorem blanditiis. Quisquam recusandae, laboriosam facere quibusdam rem esse corrupti obcaecati, delectus doloremque ad possimus aliquam labore!
+                </p>
+                <a href="#" class="btn-discovery">
+                    Découvrir
+                </a>
+            </div>
+        </div>
+        <div class="shadow-people">
+            <div class="shadow-people-intro reveal">
+                <h2>Les shadow peoples ou personnes ombres</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo accusantium adipisci omnis! Dolores tempora,
+                    ea fuga asperiores voluptates amet quidem commodi pariatur laboriosam
+                    recusandae praesentium ipsa maxime deleniti incidunt iusto.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit possimus,
+                    fuga illum dolorem blanditiis. Quisquam recusandae, laboriosam facere quibusdam rem esse corrupti obcaecati, delectus doloremque ad possimus aliquam labore!
+                </p>
+                <a href="#" class="btn-discovery">
+                    Découvrir
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="icon-btn">
+                <a href="#" class="social"><i class="f-social fab fa-facebook-f"></i></a> 
+                <a href="#" class="social"><i class="f-social fab fa-instagram"></i></a>
+                <a href="#" class="social"><i class="f-social fab fa-snapchat-ghost"></i></a>
+                <a href="#" class="social"><i class="f-social fab fa-twitter"></i></a>
+        </div>
+        <div class="site-map">
+            <ul class="site-map-link">
+                <li><a href="./home.html">Accueil</a></li>
+                <li><a href="#">Legende</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Connexion</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="credit">Christopher Saury © <span class="year"></span> Tout droits réservés</p>
+        </div>
+    </footer>
+    <script src="./js/home.js"></script>
+</body>
+</html>

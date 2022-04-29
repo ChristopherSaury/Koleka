@@ -1,0 +1,395 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/**********DESKTOP NAVBAR **********************/ 
+#desktop{
+    width: 100%;
+    height: 80px;
+    background-color: #1a2020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    /* font-family: 'Rubik Mono One', sans-serif; */
+    font-family: 'Mate SC', serif;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+}
+#desktop div{
+    width: 100%;
+    height: auto;
+}
+#desktop .logo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#desktop .logo{
+    width: 50px;
+    height: 30px;
+}
+#desktop ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+#desktop ul li{
+    padding-right: 5%;
+}
+#desktop ul a{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+#desktop ul a:hover{
+    color: rgb(131, 130, 130);
+}
+/*************NAVBAR MOBILE ********************/
+#mobile-nav{
+    width: 100%;
+    height: 80px;
+    background-color: #1a2020;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    z-index: 9999;
+}
+#mobile-nav .logo-mobile{
+    padding-left: 5%;
+    color: #E6D18E;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+
+}
+#mobile-nav .fa-bars,
+.fa-times{
+    color: #E6D18E;
+    font-size: 34px;
+    position: relative;
+    z-index: 9999;
+}
+#mobile-nav .mobile-list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #E6D18E;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    transition: transform 1s;
+    z-index: 9995;
+}
+#mobile-nav .mobile-link{
+    color: #1a2020;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Mate SC', serif;
+}
+.closed-menu{
+    transform: translateX(-100%);
+}
+.open{
+    transform: translateX(0);
+}
+/*************SCROLL BTN **********************/
+#progress{
+    position: fixed;
+    bottom: 20px ;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 999;
+}
+#progress-value{
+    display: block;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: rgb(244, 238, 238);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+/************* SECTION INTRODUCTION **************************/
+#introduction{
+    width: 100%;
+    height: auto;
+}
+
+#introduction .btn-discovery{
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    padding: 2%;
+    background-color: #E6D18E;
+    color: #1a2020;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(131, 130, 130);
+    font-family: 'Mate SC', serif;
+}
+#introduction .btn-discovery:hover{
+    background-color: #fff0bd;
+}
+.reveal {
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: all 2s ease;
+}
+ 
+ .reveal.active {
+   transform: translateY(0px);
+   opacity: 1;
+}
+
+#introduction .btn-discovery button:hover {
+    background-color: #cc76d2;
+}
+/************** MEDUSA PART *************************/
+.medusa{
+    color: #fff;
+    width: 100%;
+    height: 140vh;
+    background: url("../assets/image/medusa.jpg");
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    display: flex;
+    justify-content: flex-end;
+}
+.medusa-intro{
+    margin: 15% 2% 0 2%;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.medusa-intro h2{
+    font-size: 60px;
+    text-align: center;
+}
+.medusa-intro p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+}
+/********************* WEREWOLF PART ******************************/
+.werewolf{
+    color: #fff;
+    width: 100%;
+    height: 140vh;
+    background: url("../assets/image/loup-garoup.jpg");
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+}
+.werewolf-intro{
+    padding: 10% 2% 0 2%;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.werewolf-intro h2{
+    font-size: 60px;
+    text-align: center;
+}
+.werewolf-intro p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+}
+/****************** SHADOW PEOPLE PART ******************************/
+.shadow-people{
+    color: #fff;
+    width: 100%;
+    height: 140vh;
+    background: url("../assets/image/shadow-people.jpg");
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    display: flex;
+    justify-content: flex-end;
+}
+.shadow-people-intro{
+    padding: 10% 2% 0 2%;
+    margin-right: 2%;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.shadow-people-intro h2{
+    font-size: 60px;
+    text-align: center;
+}
+.shadow-people-intro p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+}
+/*************** FOOTER **************************/
+footer{
+    width: 100%;
+    height: 250px;
+    padding: 1% 5% 0 5%;
+    background-color: #1a2020;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+footer .social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(131, 130, 130);
+    position: relative;
+}
+footer .f-social{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+footer .social:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+footer .site-map-link{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer .site-map-link a:hover{
+    color: rgb(131, 130, 130);
+}
+footer .site-map-link li{
+    list-style-type: none;
+}
+footer .icon-btn{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+footer .credit{
+    margin-top: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    #desktop{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+    .medusa-intro h2,
+    .werewolf-intro h2,
+    .shadow-people-intro h2{
+        font-size: 45px;
+    }
+    .medusa-intro p,
+    .werewolf-intro p,
+    .shadow-people-intro p{
+        font-size: 14px;
+    }
+    .medusa,
+    .werewolf,
+    .shadow-people{
+        height: auto;
+        padding: 10% 0%;
+    }
+    .medusa-intro,
+    .werewolf-intro,
+    .shadow-people-intro{
+        width: 300px;
+    }
+    footer{
+        width: 100%;
+        height: 250px;
+        padding: 1% 3% 0 3%;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+     #desktop{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+    .medusa-intro h2,
+    .werewolf-intro h2,
+    .shadow-people-intro h2{
+        font-size: 45px;
+    }
+    .medusa-intro p,
+    .werewolf-intro p,
+    .shadow-people-intro p{
+        font-size: 14px;
+    }
+    .medusa,
+    .werewolf,
+    .shadow-people{
+        height: auto;
+        padding: 10% 0%;
+    }
+    .medusa-intro,
+    .werewolf-intro,
+    .shadow-people-intro{
+        width: 300px;
+        padding: 5% 2% 0 2%;
+        margin-top: 4%;
+    }
+    footer{
+        width: 100%;
+        height: 250px;
+        padding: 1% 3% 0 3%;
+        gap: 30px;
+    }
+}
