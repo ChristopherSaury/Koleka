@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -28,12 +30,38 @@
     width: 40%;
     height: auto;
 }
-.info ul {
-    list-style-type: none;
+.org-info{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 60px;
+    margin-top: 20%;
 }
+.org-info div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.org-info .ct-intro-txt p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    width: 80%;
+}
+.org-info .info-icon{
+    width: 22px;
+    height: 22px;
+}
+.org-info div .info-name{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    display: block;
+    padding-top: 16px;
+}
+.org-info div .info-txt{
+    color: #aaaaaa;
+}
+
 /*********** FORM PART ***************/
 .info-ct{
     width: 60%;
@@ -56,6 +84,7 @@
 .info-ct textarea{
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 15px;
+    letter-spacing: 0.5px;
 }
 .info-ct .line{
     width: 100%;
@@ -97,6 +126,7 @@
     text-decoration: none;
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 .btn-wrapper a:hover{
     background-color: rgb(53, 53, 53);
