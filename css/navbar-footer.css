@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /**********DESKTOP NAVBAR **********************/ 
 #desktop{
     width: 100%;
@@ -104,7 +106,58 @@
 .open{
     transform: translateX(0);
 }
-
+/************** NEWSLETTER ************************/
+.nsl-section{
+    padding: 5% 0;
+}
+.nsl-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0 2%;
+}
+.title-ct{
+    width: 60%; 
+}
+.entry-container{
+    width: 40%;
+}
+.nsl-container h3{
+    font-family: 'Mulish', sans-serif;
+    color: #848282;
+    letter-spacing: 2px;
+    font-size: 18px;
+    
+}
+.nsl-container h2{
+    padding-top: 4%;
+    width: 80%;
+    font-size: 35.008px;
+    line-height: 45.5104px;
+    font-family: 'Playfair Display', serif;
+}
+#nsl-subscription{
+    margin-top: 10%;
+    width: 60%;
+    padding: 10px 8px;
+    border-radius: 1px;
+    border: 1px solid #222;
+}
+.nsl-btn{
+    padding: 10px 30px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 1px;
+}
+.nsl-agreement{
+    margin-top: 5%;
+    font-family: 'Cabin Condensed', sans-serif;
+    letter-spacing: 1px;
+}
 /*************** FOOTER **************************/
 footer{
     width: 100%;
