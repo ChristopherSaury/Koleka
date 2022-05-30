@@ -130,7 +130,8 @@
     letter-spacing: 1px;
 }
 .btn-wrapper a:hover{
-    background-color: rgb(53, 53, 53);
+    background-color: #E6D18E;
+    color: #222;
 }
 
 /************** CONTACT RESPONSIVE ***************************/

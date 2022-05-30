@@ -63,9 +63,31 @@
     color: #fff;
     font-family: 'Cabin Condensed', sans-serif;
     letter-spacing: 2px;
-
+}
+#login .lg-btn-wrapper a:hover{
+    background-color: #E6D18E;
+    color: black;
 }
 #login .signup-link{
     display: block;
     padding: 5% 0 5% 0;
+}
+
+@media screen and (max-width: 992px) {
+    #desktop{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+    #login{
+        height: 100vh;
+        padding: 4% 0;
+        justify-content: center;
+    }
+    #login form{
+        margin-right: 0%;
+        width: 80%;
+        margin-top: 0%;
+    }
 }

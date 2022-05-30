@@ -20,9 +20,9 @@
 }
 
 #signup form{
-    margin-top: 5%;
+    margin-top: 4%;
     margin-right: 15%;
-    padding: 90px 50px;
+    padding: 50px 50px;
     background-color: #fff;
     width: 400px;
     height: auto;
@@ -66,7 +66,30 @@
     letter-spacing: 2px;
 
 }
+#signup .sp-btn-wrapper a:hover{
+    background-color: #E6D18E;
+    color: black;
+}
 #signup .signup-link{
     display: block;
     padding: 5% 0 5% 0;
+}
+
+@media screen and (max-width: 992px) {
+    #desktop{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+    #signup{
+        height: 100vh;
+        padding: 4% 0;
+        justify-content: center;
+    }
+    #signup form{
+        margin-right: 0%;
+        width: 80%;
+        margin-top: 0%;
+    }
 }

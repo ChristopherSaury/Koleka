@@ -47,7 +47,7 @@
     
 }
 #desktop ul a:hover{
-    color: rgb(131, 130, 130);
+    color: #E6D18E;
 }
 /*************NAVBAR MOBILE ********************/
 #mobile-nav{
@@ -223,15 +223,13 @@ footer .social{
     border-radius: 50%;
     border: none;
     background-color: rgb(131, 130, 130);
-    position: relative;
-}
-footer .f-social{
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer .social:hover{
-    background-color: rgb(167, 167, 167);
+    background-color: #E6D18E;
+    color: #222;
 }
 footer .site-map-link{
     width: 100%;
@@ -242,7 +240,7 @@ footer .site-map-link{
     gap: 20px;
 }
 footer .site-map-link a:hover{
-    color: rgb(131, 130, 130);
+    color: #E6D18E;
 }
 footer .site-map-link li{
     list-style-type: none;

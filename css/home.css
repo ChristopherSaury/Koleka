@@ -51,7 +51,7 @@ html{
     
 }
 #desktop ul a:hover{
-    color: rgb(131, 130, 130);
+    color: #E6D18E;
 }
 /*************NAVBAR MOBILE ********************/
 #mobile-nav{
@@ -277,12 +277,9 @@ footer .social{
     border-radius: 50%;
     border: none;
     background-color: rgb(131, 130, 130);
-    position: relative;
-}
-footer .f-social{
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer .social:hover{
     background-color: rgb(167, 167, 167);
