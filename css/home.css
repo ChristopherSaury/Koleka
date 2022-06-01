@@ -369,6 +369,7 @@ footer .credit{
     .werewolf-intro p,
     .shadow-people-intro p{
         font-size: 14px;
+        width: 100%;
     }
     .medusa,
     .werewolf,
@@ -379,7 +380,7 @@ footer .credit{
     .medusa-intro,
     .werewolf-intro,
     .shadow-people-intro{
-        width: 300px;
+        width: 500px;
         padding: 5% 2% 0 2%;
         margin-top: 4%;
     }
