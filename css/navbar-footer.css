@@ -16,6 +16,7 @@
     /* font-family: 'Rubik Mono One', sans-serif; */
     font-family: 'Mate SC', serif;
     border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    z-index: 999;
 }
 #desktop div{
     width: 100%;
