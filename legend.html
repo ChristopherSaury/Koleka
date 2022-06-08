@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleka | Connexion</title>
+    <title>Koleka | Légendes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/navbar-footer.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <!-- changer le canonical après attribution nom de domaine -->
-    <link rel="canonical" href="./signup.html">
+    <link rel="stylesheet" href="./css/legend.css">
 </head>
 <body>
     <header>
         <nav id="desktop">
             
                 <div class="logo-container">
-                    <a href="./home.html">     
-                        <img class="logo" src="./assets/image/logo.png" alt="Koleka logo">
+                    <a href="./home.html">
+                        <img class="logo" src="./assets/image/logo.png" alt="">
                     </a>
                 </div>
                 <div class="link-container">
@@ -45,30 +43,17 @@
         </nav>
     </header>
 
-    <section id="login">
-        <form action="#">
-            <h1>Se connecter à Koleka</h1>
-            <div class="identification">
-                <label for="username"></label>
-                <input type="email" id="username" name="username" placeholder="Entrez votre Pseudo ou Email">
-            </div>
-            <div class="identification-psw">
-                <label for="id-psw"></label>
-                <input type="password" id="id-psw" name="id-psw" placeholder="Mot de Passe">
-            </div>
-            <div class="rmb-me">
-                <input type="checkbox">
-                <p> Se souvenir de moi </p>
-            </div>
-            <div class="lg-btn-wrapper">
-                <a href="#">Connexion</a>
-            </div>
-            <p class="signup-link">
-                Vous n'avez pas de compte ? <a href="./signup.html">créez-en un</a> 
-            </p>
-        </form>
+    <section id="legend">
+        <div class="form-bkg">
+            <form action="#" class="country-menu">
+                <label for="country-select"></label>
+                <select name="country-select" id="country-select">
+                    <option value="">--Sélectionner un pays--</option>
+                </select>
+            </form>
+        </div>
     </section>
-
+    <hr>
     <article class="nsl-section">
         <div class="nsl-container">
             <div class="title-ct">
@@ -88,7 +73,6 @@
             </form>
         </div>
     </article>
-
     <footer>
         <div class="icon-btn">
                 <a href="#" class="social"><i class="f-social fab fa-facebook-f"></i></a> 
