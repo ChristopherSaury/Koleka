@@ -195,6 +195,15 @@
     #mobile-nav{
         display: flex;
     }
+    /******* ABOUT INTRO **************/
+    #about .koleka-intro{
+        flex-direction: column;
+        padding: 4%;
+    }
+    /****** INTRO SECTION ************/
+    #about .team-section{
+        padding: 8% 0 12% 0;
+    }
     footer{
         width: 100%;
         height: 250px;
