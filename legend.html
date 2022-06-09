@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koleka | Légendes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/navbar-footer.css">
+    <link rel="stylesheet" href="./css/koleka.css">
     <link rel="stylesheet" href="./css/legend.css">
 </head>
 <body>
@@ -46,9 +46,23 @@
     <section id="legend">
         <div class="form-bkg">
             <form action="#" class="country-menu">
-                <label for="country-select"></label>
+                <!-- <label for="country-select"></label>
                 <select name="country-select" id="country-select">
-                    <option value="">--Sélectionner un pays--</option>
+                    <option value="">--  Sélectionner un pays --</option>
+                </select> -->
+                <label for="">-- Selectionner un pays --</label>
+                <select name="country-select" id="country-select">
+                    <optgroup label="Afrique">
+                        <option>Afrique du Sud</option>
+                        <option>Algerie</option>
+                        <option>Angola</option>
+                    </optgroup>
+
+                    <optgroup label="Amérique">
+                        <option>Antigua-et-Barbuda</option>
+                        <option>Argentine</option>
+                        <option>Bahamas</option>
+                    </optgroup>
                 </select>
             </form>
         </div>

@@ -1,0 +1,1074 @@
+/*** NAVBAR FONT *************/
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+/******** ABOUT PAGE FONT ******************/
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap'); /*CONTACT */
+/********* LOGIN & SIGNUP PAGE FONT ******************/
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap'); /*CONTACT */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');/*CONTACT */
+/*********** CONTACT PAGE ******************************/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/************* NAVBAR DESKTOP *******************************/
+#desktop{
+    width: 100%;
+    height: 80px;
+    background-color: #1a2020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* font-family: 'Rubik Mono One', sans-serif; */
+    font-family: 'Mate SC', serif;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    z-index: 999;
+}
+#desktop div{
+    width: 100%;
+    height: auto;
+}
+#desktop .logo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#desktop .logo{
+    width: 70px;
+    height: 40px;
+}
+#desktop ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+#desktop ul li{
+    padding-right: 5%;
+}
+#desktop ul a{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+#desktop ul a:hover{
+    color: #E6D18E;
+}
+/***************** MOBILE NAVBAR *******************/
+#mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1a2020;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    z-index: 9999;
+}
+#mobile-nav .logo-mobile{
+    padding-left: 5%;
+    color: #E6D18E;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+
+}
+#mobile-nav .fa-bars,
+.fa-times{
+    color: #E6D18E;
+    font-size: 34px;
+    position: relative;
+    z-index: 9999;
+}
+#mobile-nav .mobile-list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #E6D18E;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    transition: transform 1s;
+    z-index: 9995;
+}
+#mobile-nav .mobile-link{
+    color: #1a2020;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Mate SC', serif;
+}
+.closed-menu{
+    transform: translateX(-100%);
+}
+.open{
+    transform: translateX(0);
+}
+/*************** FOOTER **************************/
+footer{
+    width: 100%;
+    height: 250px;
+    padding: 1% 5% 0 5%;
+    background-color: #1a2020;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+footer .social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(131, 130, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .social:hover{
+    background-color: #E6D18E;
+    color: #222;
+}
+footer .site-map-link{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer .site-map-link a:hover{
+    color: #E6D18E;
+}
+footer .site-map-link li{
+    list-style-type: none;
+}
+footer .icon-btn{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+footer .credit{
+    margin-top: 10%;
+    text-align: center;
+}
+/************** NEWSLETTER ************************/
+.nsl-section{
+    padding: 5% 0;
+}
+.nsl-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0 2%;
+}
+.title-ct{
+    width: 60%; 
+}
+.entry-container{
+    width: 40%;
+}
+.nsl-container h3{
+    font-family: 'Mulish', sans-serif;
+    color: #848282;
+    letter-spacing: 2px;
+    font-size: 18px;
+    
+}
+.nsl-container h2{
+    padding-top: 4%;
+    width: 80%;
+    font-size: 35.008px;
+    line-height: 45.5104px;
+    font-family: 'Playfair Display', serif;
+}
+#nsl-subscription{
+    margin-top: 10%;
+    width: 60%;
+    padding: 10px 8px;
+    border-radius: 1px;
+    border: 1px solid #222;
+}
+.nsl-btn{
+    margin-top: 10%;
+    padding: 10px 30px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 1px;
+}
+.nsl-sub{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.nsl-agreement{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-top: 5%;
+    font-family: 'Cabin Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/****************** HOMEPAGE *********************/
+/*************SCROLL BTN **********************/
+#progress{
+    position: fixed;
+    bottom: 20px ;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 999;
+}
+#progress-value{
+    display: block;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: rgb(244, 238, 238);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+/************* SECTION INTRODUCTION **************************/
+#introduction{
+    width: 100%;
+    height: auto;
+}
+
+#introduction .btn-discovery{
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    padding: 2%;
+    background-color: #E6D18E;
+    color: #1a2020;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(131, 130, 130);
+    font-family: 'Mate SC', serif;
+}
+#introduction .btn-discovery:hover{
+    background-color: #fff0bd;
+}
+.reveal {
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: all 2s ease;
+}
+ 
+ .reveal.active {
+   transform: translateY(0px);
+   opacity: 1;
+}
+
+#introduction .btn-discovery button:hover {
+    background-color: #cc76d2;
+}
+/************** MEDUSA PART *************************/
+.medusa{
+    color: #fff;
+    width: 100%;
+    height: 140vh;
+    background: url("../assets/image/medusa.jpg");
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    display: flex;
+    justify-content: flex-end;
+}
+.medusa-intro{
+    margin: 15% 2% 0 2%;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.medusa-intro h2{
+    font-size: 60px;
+    text-align: center;
+}
+.medusa-intro p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+}
+/********************* WEREWOLF PART ******************************/
+.werewolf{
+    color: #fff;
+    width: 100%;
+    height: 140vh;
+    background: url("../assets/image/loup-garoup.jpg");
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+}
+.werewolf-intro{
+    padding: 10% 2% 0 2%;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.werewolf-intro h2{
+    font-size: 60px;
+    text-align: center;
+}
+.werewolf-intro p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+}
+/****************** SHADOW PEOPLE PART ******************************/
+.shadow-people{
+    color: #fff;
+    width: 100%;
+    height: 140vh;
+    background: url("../assets/image/shadow-people.jpg");
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.71);
+    display: flex;
+    justify-content: flex-end;
+}
+.shadow-people-intro{
+    padding: 10% 2% 0 2%;
+    margin-right: 2%;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.shadow-people-intro h2{
+    font-size: 60px;
+    text-align: center;
+}
+.shadow-people-intro p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+
+/*************** ABOUT PAGE *********************/
+.abt-banner{
+    width: 100%;
+    height: 500px;
+    background: url('../assets/image/museum.jpg')
+    center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abt-title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(32, 31, 31, .7);
+    width: 50%;
+    height: 30%;
+}
+.abt-title-wrapper h2{
+    font-size: 50px;
+    font-family: 'Mulish', sans-serif;
+}
+#about .koleka-intro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;  
+}
+#about .koleka-intro p{
+    width: 100%;
+}
+#about{
+    padding: 4% 2%;
+}
+#about .abt-title1,
+#about .abt-value-title{
+    /* text-align: center; */
+    margin-top: 0;
+    font-size: 30px;
+}
+#about .abt-presentation,
+#about .abt-value{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+/************* ABOUT TEAM SECTION ********************/
+#about .abt-team-title{
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+}
+#about .team-section{
+    padding: 4% 0;
+}
+#about .abt-team-title{
+    display: block;
+    text-align: center;
+}
+#about .member{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#about .member-position{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+#about .mb-name{
+    font-family: 'Prata', serif;
+    font-size: 25px;
+}
+#about .mb-position{
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 25px;
+}
+#about .member-sn{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 996;
+}
+#about .member-sn a{
+    text-decoration: none;
+    color: #fff;
+}
+#about .member-info{
+    width: 100%;
+    height: 350px;
+    background: rgba(36, 36, 36, 0.4);
+    color: #fff;
+    position: relative;
+    top: 6%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+#about .member-info p{
+    text-align: center;
+    margin-top: 15%;
+}
+#member1,
+#member2,
+#member3,
+#member4,
+#member5,
+#member6{
+    opacity: 0;
+    cursor: pointer;
+}
+#member1:hover,
+#member2:hover,
+#member3:hover,
+#member4:hover,
+#member5:hover,
+#member6:hover{
+    opacity: 1;
+}
+#about .member1{
+    background: url('../assets/image/member-1.jpg')
+    center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+#about .member2{
+    background: url('../assets/image/member-3.jpg')
+    center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about .member3{
+    background: url('../assets/image/member-2.jpg')
+    center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about .member4{
+    background: url('../assets/image/member-4.jpg')
+    center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about .member5{
+    background: url('../assets/image/member-5.jpg')
+    center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about .member6{
+    background: url('../assets/image/member-6.jpg')
+    center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about .abt-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+
+/*************** LOGIN PAGE ************************/
+#login{
+    padding: 8% 0;
+    width: 100%;
+    height: 120vh;
+    background: url('../assets/image/fantasy-landscape.jpg')
+    center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#login form{
+    margin-top: 5%;
+    margin-right: 15%;
+    padding: 90px 50px;
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+}
+#login form #username,
+#login form #id-psw{
+    width: 100%;
+    padding: 15px 20px;
+    font-family: 'Cabin Condensed', sans-serif;
+    margin-bottom: 10%;
+    border-radius: 1px;
+    border: 1px solid gainsboro;
+}
+#login form h1{
+    text-align: center;
+    margin-bottom: 8%;
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 30px;
+}
+#login .rmb-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+#login .lg-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+#login .lg-btn-wrapper a{
+    width: 100%;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    font-family: 'Cabin Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+#login .lg-btn-wrapper a:hover{
+    background-color: #E6D18E;
+    color: black;
+}
+#login .signup-link{
+    display: block;
+    padding: 5% 0 5% 0;
+}
+
+
+/***************** SIGNUP PAGE ***************************/
+#signup{
+    padding: 8% 0;
+    width: 100%;
+    height: 120vh;
+    background: url('../assets/image/fantasy-forest.jpg')
+    center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#signup form{
+    margin-top: 4%;
+    margin-right: 15%;
+    padding: 50px 50px;
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+}
+#signup form #username,
+#signup form #new-psw,
+#signup form #cf-psw{
+    width: 100%;
+    padding: 15px 20px;
+    font-family: 'Cabin Condensed', sans-serif;
+    margin-bottom: 10%;
+    border-radius: 1px;
+    border: 1px solid gainsboro;
+}
+#signup form h2{
+    text-align: center;
+    margin-bottom: 8%;
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 30px;
+}
+#signup .rmb-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+#signup .sp-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+#signup .sp-btn-wrapper a{
+    width: 100%;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    font-family: 'Cabin Condensed', sans-serif;
+    letter-spacing: 2px;
+
+}
+#signup .sp-btn-wrapper a:hover{
+    background-color: #E6D18E;
+    color: black;
+}
+#signup .signup-link{
+    display: block;
+    padding: 5% 0 5% 0;
+}
+
+
+
+/*************** CONTACT PAGE **************************/
+#contact{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#contact .map{
+    width: 100%;
+    height: 400px;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+.form-section{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.info{
+    width: 40%;
+    height: auto;
+}
+.org-info{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 20%;
+}
+.org-info div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.org-info .ct-intro-txt p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    width: 80%;
+    padding-left: 6%;
+}
+.org-info .info-icon{
+    width: 22px;
+    height: 22px;
+}
+.org-info div .info-name{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    display: block;
+    padding-top: 16px;
+}
+.org-info div .info-txt{
+    color: #aaaaaa;
+}
+
+/*********** FORM PART ***************/
+.info-ct{
+    width: 60%;
+    height: auto;
+    border: 1.4px solid gainsboro;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 110px;
+}
+.info-ct h2{
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+.info-ct label,
+.info-ct input,
+.info-ct textarea{
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.info-ct .line{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+}
+.info-ct div{
+    width: 100%;
+}
+.info-ct .line .lastname,
+.info-ct .line .firstname,
+.info-ct .mail,
+.info-ct .subject,
+.info-ct .message{
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+}
+.info-ct input{
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid gainsboro;
+}
+.info-ct textarea{
+    border-radius: 1px;
+    border: 1px solid gainsboro;
+}
+.btn-wrapper{
+    width: 100%;
+    height: auto;
+}
+.btn-wrapper a{
+    padding: 10px 40px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.btn-wrapper a:hover{
+    background-color: #E6D18E;
+    color: #222;
+}
+
+
+/*************** RESPONSIVE **************************/
+@media screen and (max-width: 576px) {
+    /***** NAVBAR *********/
+    #desktop{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+    /******* FOOTER ********/
+    footer{
+        width: 100%;
+        height: 250px;
+        padding: 1% 3% 0 3%;
+        gap: 30px;
+    }
+    /********** NEWSLETTER ************/
+    .nsl-container{
+        flex-direction: column;
+        align-items: center;
+        /* padding: 0 2%; */
+    }
+    .nsl-container h2{
+        padding-top: 4%;
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .entry-container{
+        width: 100%;
+    }
+    #nsl-subscription{
+        width: 40%;
+    }
+    .nsl-btn{
+        padding: 10px 15px;
+    }
+    .nsl-sub{
+        justify-content: center;
+    }
+    .nsl-agreement{
+        justify-content: center;
+    }
+    /***** HOMEPAGE ********/
+    .medusa-intro h2,
+    .werewolf-intro h2,
+    .shadow-people-intro h2{
+        font-size: 45px;
+    }
+    .medusa-intro p,
+    .werewolf-intro p,
+    .shadow-people-intro p{
+        font-size: 14px;
+    }
+    .medusa,
+    .werewolf,
+    .shadow-people{
+        height: auto;
+        padding: 10% 0%;
+    }
+    .medusa-intro,
+    .werewolf-intro,
+    .shadow-people-intro{
+        width: 300px;
+    }
+    /******* ABOUT PAGE **************/
+    #about .koleka-intro{
+        flex-direction: column;
+        padding: 4%;
+    }
+    #about .team-section{
+        padding: 8% 0 12% 0;
+    }
+    /****** LOGIN PAGE ***********/
+    #login{
+        height: 100vh;
+        padding: 4% 0;
+        justify-content: center;
+    }
+    #login form{
+        margin-right: 0%;
+        width: 80%;
+        margin-top: 0%;
+    }
+    /******* SIGNUP PAGE *********/
+    #signup{
+        height: 100vh;
+        padding: 4% 0;
+        justify-content: center;
+    }
+    #signup form{
+        margin-right: 0%;
+        width: 80%;
+        margin-top: 0%;
+    }
+    /***** CONTACT PAGE ******/
+    #contact{
+        padding: 80px 0 0 0;
+    }
+    .form-section{
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .info{
+        width: 100%;
+    }
+    .info-ct .line{
+        flex-direction: column; 
+    }
+    .info-ct h2{
+        font-family: 'Libre Caslon Display', serif;
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    .info-ct{
+        width: 100%;    
+        flex-direction: column;
+        padding: 110px 45px;
+    }
+    .org-info{
+        margin-top: 0;
+    }
+    .org-info div{
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /****** NAVBAR ************/
+     #desktop{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+     /******* FOOTER ********/
+     footer{
+        width: 100%;
+        height: 250px;
+        padding: 1% 3% 0 3%;
+        gap: 30px;
+    }
+
+    /****** HOMEPAGE **********/
+    .medusa-intro h2,
+    .werewolf-intro h2,
+    .shadow-people-intro h2{
+        font-size: 45px;
+    }
+    .medusa-intro p,
+    .werewolf-intro p,
+    .shadow-people-intro p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .medusa,
+    .werewolf,
+    .shadow-people{
+        height: auto;
+        padding: 10% 0%;
+    }
+    .medusa-intro,
+    .werewolf-intro,
+    .shadow-people-intro{
+        width: 500px;
+        padding: 5% 2% 0 2%;
+        margin-top: 4%;
+    }
+    /******* LOGIN PAGE ********/
+    #login{
+        height: 100vh;
+        padding: 4% 0;
+        justify-content: center;
+    }
+    #login form{
+        margin-right: 0%;
+        width: 80%;
+        margin-top: 0%;
+    }
+    /******* SIGNUP PAGE *********/
+    #signup{
+        height: 100vh;
+        padding: 4% 0;
+        justify-content: center;
+    }
+    #signup form{
+        margin-right: 0%;
+        width: 80%;
+        margin-top: 0%;
+    }
+    /***** CONTACT PAGE ******/
+    #contact{
+        padding: 80px 0 0 0;
+    }
+    .form-section{
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .info{
+        width: 100%;
+    }
+    .info-ct .line{
+        flex-direction: column; 
+    }
+    
+    .info-ct{
+        width: 100%;    
+        flex-direction: column;
+        padding: 110px 45px;
+    }
+    .org-info{
+        margin-top: 0;
+    }
+    .org-info div{
+        justify-content: center;
+        gap: 20px;
+    }
+}
