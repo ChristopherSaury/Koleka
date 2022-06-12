@@ -796,10 +796,13 @@ footer .credit{
     font-size: 46px;
     margin-bottom: 10px;
 }
-.info-ct label,
+.info-ct label{
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 15px;
+}
 .info-ct input,
 .info-ct textarea{
-    font-family: 'Cabin Condensed', sans-serif;
+    
     font-size: 15px;
     letter-spacing: 0.5px;
 }
@@ -831,12 +834,13 @@ footer .credit{
 .info-ct textarea{
     border-radius: 1px;
     border: 1px solid gainsboro;
+    padding: 4%;
 }
 .btn-wrapper{
     width: 100%;
     height: auto;
 }
-.btn-wrapper a{
+.btn-wrapper button{
     padding: 10px 40px;
     background-color: #222;
     color: #fff;
@@ -844,8 +848,10 @@ footer .credit{
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
 }
-.btn-wrapper a:hover{
+.btn-wrapper button:hover{
     background-color: #E6D18E;
     color: #222;
 }

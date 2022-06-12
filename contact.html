@@ -80,7 +80,7 @@
                 </div>
 
             </div>
-            <form action="" class="info-ct">
+            <form method="POST" action="https://formspree.io/f/mwkyzqod" id="koleka-contact" class="info-ct">
                 <h2>Contactez-nous</h2>
                 <div class="line">
                     <div class="lastname">
@@ -93,8 +93,8 @@
                     </div>
                 </div>
                 <div class="mail">
-                    <label for="mail">Email</label>
-                    <input type="email" name="mail" id="mail">
+                    <label for="email_id">Email</label>
+                    <input type="email" name="mail" id="email_id">
                 </div>
                 <div class="subject">
                     <label for="subject">Sujet</label>
@@ -105,8 +105,9 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <div class="btn-wrapper">
-                    <a href="#">Envoyer</a>
+                    <button type="submit">Envoyer</button>
                 </div>
+                <p id="my-form-status"></p>
             </form>
         </div>
     </section>
@@ -150,6 +151,38 @@
             <p class="credit">Christopher Saury © <span class="year"></span> Tout droits réservés</p>
         </div>
     </footer>
+    <script>
+        var form = document.getElementById("koleka-contact");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
     <script src="./js/mobile_nav-footer.js"></script>
 </body>
 </html>
