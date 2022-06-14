@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+#mexico{
+    padding: 80px 0 4% 0;
+}
+#mexico .mexico-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/mexico.png")
+    center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#mexico .mexico-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#mexico .mexico-content{
+    padding: 0 0 0 10%;
+}
+#mexico .mexico-content .mexico-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#mexico .mexico-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#mexico .mexico-content a:hover{
+    text-decoration: underline;
+}
+#mexico .mexico-content ul{
+    padding: 2% 0 0 4%;
+}
+#mexico .mexico-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#mexico .mexico-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}

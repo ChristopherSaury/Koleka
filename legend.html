@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleka | Légendes</title>
+    <title>Koleka - Légendes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/koleka.css">
     <link rel="stylesheet" href="./css/legend.css">
@@ -44,27 +44,26 @@
     </header>
 
     <section id="legend">
-        <div class="form-bkg">
-            <form action="#" class="country-menu">
-                <!-- <label for="country-select"></label>
-                <select name="country-select" id="country-select">
-                    <option value="">--  Sélectionner un pays --</option>
-                </select> -->
-                <p class="indication">-- Sélectionner un pays --</p>
-                <select name="country-select" id="country-select">
-                    <optgroup label="Afrique">
-                        <option>Afrique du Sud</option>
-                        <option>Algerie</option>
-                        <option>Angola</option>
-                    </optgroup>
-
-                    <optgroup label="Amérique">
-                        <option>Haïti</option>
-                        <option>Mexique</option>
-                        <option>Etats-Unis</option>
-                    </optgroup>
-                </select>
-            </form>
+        <div class="dropdown-bkg">
+            <div class="country-menu">
+                <div class="country-entry">
+                    <span class="lg-selector" onclick="closeCountryMenu(this)">
+                        <p>-- Sélectionner un Pays --</p> <img id="lg-arrow" style="width: 20px ; height: 20px" src="./assets/image/arrow.svg" alt="arrow">
+                    </span>     
+                    <ul id="choice-menu" class="close-lg-menu">
+                        <li class="lg-continent-name"> Afrique</li>
+                        <a href=""><li class="country-link">Afrique du Sud</li></a>
+                        <a href=""><li class="country-link">Algérie</li></a>
+                        <li class="lg-continent-name">Amerique</li>
+                        <a href="./access-pages/usa.html"><li class="country-link">Etats-Unis</li></a>
+                        <a href="./access-pages/haiti.html"><li class="country-link">Haïti</li></a>
+                        <a href="./access-pages/mexico.html"><li class="country-link">Mexique</li></a>
+                        <li class="lg-continent-name">Europe</li>
+                        <a href="./access-pages/france.html"><li class="country-link">France</li></a>
+                        <a href="./access-pages/greece.html"><li class="country-link">Grèce</li></a>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="monthly-selection">
@@ -160,6 +159,7 @@
             <p class="credit">Christopher Saury © <span class="year"></span> Tout droits réservés</p>
         </div>
     </footer>
+    <script src="./js/legend.js"></script>
     <script src="./js/mobile_nav-footer.js"></script>
 </body>
 </html>
