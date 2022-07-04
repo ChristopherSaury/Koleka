@@ -84,13 +84,17 @@ html{
     z-index: 9999;
 }
 #mobile-nav .logo-mobile{
-    padding-left: 5%;
-    color: #E6D18E;
-    font-size: 15px;
-    cursor: pointer;
-    position: relative;
-    z-index: 9999;
-
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 998;
+}
+#mobile-nav .logo-mobile .logo-mb{
+    width: 60px;
+    height: 30px;
 }
 #mobile-nav .fa-bars,
 .fa-times{
@@ -259,7 +263,7 @@ footer .credit{
     display: none;
     place-items: center;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px #fff;
     cursor: pointer;
     z-index: 999;
 }
@@ -305,9 +309,6 @@ footer .credit{
    opacity: 1;
 }
 
-#introduction .btn-discovery button:hover {
-    background-color: #cc76d2;
-}
 /************** MEDUSA PART *************************/
 .medusa{
     color: #fff;
@@ -916,6 +917,8 @@ footer .credit{
     .shadow-people{
         height: auto;
         padding: 10% 0%;
+        display: flex;
+        justify-content: center;
     }
     .medusa-intro,
     .werewolf-intro,
