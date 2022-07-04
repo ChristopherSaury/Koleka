@@ -2,8 +2,6 @@
 let calcScrollValue = () =>{
   // scrollProgress est la variable qui va nous permettre d'accéder à progress qui est la div container principal de notre bouton
     let scrollProgress = document.getElementById("progress");
-   // progressValue va stocker le span qui contient le symbole du bouton  
-    let progressValue = document.getElementById("progress-value");
     // je vais stocker dans la variable pos ma position sur la page par 
     //rapport au nombre de pixels sur lesquels nous avons défilé verticalement depuis le haut de page
     let pos = document.documentElement.scrollTop;
