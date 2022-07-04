@@ -1,77 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Association culturelle Koleka - Inscription</title>
+    <title>Koleka - Mythes et légendes Togo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/koleka.css">
+    <link rel="stylesheet" href="../css/koleka.css">
+    <link rel="stylesheet" href="../css/togo.css">
 </head>
 <body>
     <header>
         <nav id="desktop">
             
                 <div class="logo-container">
-                    <a href="./home.html">     
-                        <img class="logo" src="./assets/image/logo.png" alt="Koleka logo">
+                    <a href="../home.html">
+                        <img class="logo" src="../assets/image/logo.png" alt="">
                     </a>
                 </div>
                 <div class="link-container">
                     <ul>
-                        <li><a href="./home.html">Accueil</a></li>
-                        <li><a href="./legend.html">Legendes</a></li>
-                        <li><a href="./about.html">A Propos</a></li>
-                        <li><a href="./login.html">Connexion</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="../home.html">Accueil</a></li>
+                        <li><a href="../legend.html">Legendes</a></li>
+                        <li><a href="../about.html">A Propos</a></li>
+                        <li><a href="../login.html">Connexion</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
                     </ul>
                 </div>
         </nav>
         <nav id="mobile-nav">
             <div class="logo-mobile">
-                <a href="./home.html">
-                    <img class="logo-mb" src="./assets/image/logo.png" alt="Association culturelle Koleka logo">
+                <a href="../home.html">
+                    <img class="logo-mb" src="../assets/image/logo.png" alt="Association culturelle Koleka logo">
                 </a>
             </div>
                 <i class="fas fa-bars" onclick="toggleMobileMenu(this)"></i>
             <ul class="mobile-list closed-menu">
-                <li><a href="./home.html" class="mobile-link">Accueil</a></li>
-                <li><a href="./legend.html" class="mobile-link">Legende</a></li>
-                <li><a href="./about.html" class="mobile-link">A propos</a></li>
-                <li><a href="./login.html" class="mobile-link">Connexion</a></li>
-                <li><a href="./contact.html" class="mobile-link">Contact</a></li>
+                <li><a href="../home.html" class="mobile-link">Accueil</a></li>
+                <li><a href="../legend.html" class="mobile-link">Legende</a></li>
+                <li><a href="../about.html" class="mobile-link">A propos</a></li>
+                <li><a href="../login.html" class="mobile-link">Connexion</a></li>
+                <li><a href="../contact.html" class="mobile-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="signup">
-        <form action="#">
-            <h2>Inscription</h2>
-            <div class="identification">
-                <label for="username"></label>
-                <input type="email" id="username" name="username" placeholder="Entrez votre Pseudo ou Email">
+    <section id="togo">
+        <div class="congoRdc-banner"></div>
+        <h2 class="congoRdc-title">Congo RDC</h2>
+            <div class="congoRdc-content">
+                <h3 class="congoRdc-sub-title">Mythes et légendes du Congo Rdc</h3>
+                <ul>
+                    <li><a href="#">Mami Wata, Mère des Eaux</a></li>
+                </ul>
             </div>
-            <div class="create-psw">
-                <label for="new-psw"></label>
-                <input type="password" id="new-psw" name="new-psw" placeholder="Mot de Passe">
-            </div>
-            <div class="confirm-psw">
-                <label for="cf-psw"></label>
-                <input type="password" id="cf-psw" name="cf-psw" placeholder="Confirmer Mot de Passe">
-            </div>
-            <div class="rmb-me">
-                <input type="checkbox">
-                <p> J'accepte les conditions d'utilisation </p>
-            </div>
-            <div class="sp-btn-wrapper">
-                <a href="#">Terminer</a>
-            </div>
-            <p class="signup-link">
-                Vous avez déja un compte ? <a href="./login.html">identifiez-vous</a> 
-            </p>
-        </form>
     </section>
-
+    <hr>
     <article class="nsl-section">
         <div class="nsl-container">
             <div class="title-ct">
@@ -91,7 +74,6 @@
             </form>
         </div>
     </article>
-
     <footer>
         <div class="icon-btn">
                 <a href="#" class="social"><i class="f-social fab fa-facebook-f"></i></a> 
@@ -111,6 +93,6 @@
             <p class="credit">Christopher Saury © <span class="year"></span> Tout droits réservés</p>
         </div>
     </footer>
-    <script src="./js/mobile_nav-footer.js"></script>
+    <script src="../js/mobile_nav-footer.js"></script>
 </body>
 </html>
