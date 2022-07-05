@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+#mythPage{
+    padding: 10% 0 4% 0;
+}
+#mythPage .article-info{
+    margin-bottom: 2%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+#mythPage .article-info p{
+    display: block;
+    padding-left: 15%;
+}
+#mythPage .article-info .article-author{
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+}
+#mythPage .myth-page-title{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 2%;
+}
+#mythPage .article-img-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mythPage .article-img{
+    width: 70%;
+    height: auto;
+}
+#mythPage article figcaption{
+    margin-top: 5px;
+}
+#mythPage .article-body{
+    margin-top: 2%;
+    padding: 0 15%;
+}
