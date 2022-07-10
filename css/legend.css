@@ -136,3 +136,30 @@
     text-align: center;
     font-size: 18px;
 }
+
+@media screen and (min-width: 280px ) and (max-width: 575px) {
+    #legend .monthly-selection .legend-title{
+        font-size: 25px;
+    }
+    #legend .monthly-selection .legend-illustration{
+        width: 100%;
+        height: auto;
+    }
+    #legend .lg-myth-resume{
+        width: 280px;
+        padding: 2%;
+    }
+    #legend .lg-myth-title{
+        text-decoration: none;
+        color: #222;
+        font-family: 'Cinzel', serif;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992) {
+    #legend .monthly-selection .legend-title{
+        font-size: 35px;
+    }
+}

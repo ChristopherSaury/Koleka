@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 #mythPage{
-    padding: 10% 0 4% 0;
+    padding-top: 80px;
+    padding-bottom: 4%;
+}
+#mythPage article{
+    padding-top: 4%;
 }
 #mythPage .article-info{
     margin-bottom: 2%;
@@ -38,8 +42,19 @@
 }
 #mythPage article figcaption{
     margin-top: 5px;
+    font-weight: bolder;
+    font-size: 15px;
 }
 #mythPage .article-body{
-    margin-top: 2%;
+    margin-top: 4%;
     padding: 0 15%;
+}
+
+@media screen and (max-width: 576px){
+    #mythPage .myth-page-title{
+        font-size: 30px;
+    }
+    #mythPage article figcaption{
+        padding: 0 15%;
+    }
 }
