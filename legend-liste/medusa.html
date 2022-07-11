@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleka - Mythe de Médusa</title>
+    <link rel="icon" type="image/x-icon" href="../assets/image/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/koleka.css">
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop">
+            
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/image/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../legendes.html">Legendes</a></li>
+                        <li><a href="../a-propos.html">A Propos</a></li>
+                        <li><a href="../connexion.html">Connexion</a></li>
+                        <li><a href="../nous-contacter.html">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <nav id="mobile-nav">
+            <div class="logo-mobile">
+                <a href="../index.html">
+                    <img class="logo-mb" src="../assets/image/logo.png" alt="Association culturelle Koleka logo">
+                </a>
+            </div>
+                <i class="fas fa-bars" onclick="toggleMobileMenu(this)"></i>
+            <ul class="mobile-list closed-menu">
+                <li><a href="../index.html" class="mobile-link">Accueil</a></li>
+                <li><a href="../legendes.html" class="mobile-link">Legende</a></li>
+                <li><a href="../a-propos.html" class="mobile-link">A propos</a></li>
+                <li><a href="../connexion.html" class="mobile-link">Connexion</a></li>
+                <li><a href="../nous-contacter.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="mythPage">
+        <article>
+            <h1 class="myth-page-title">La légende de Médusa</h1>
+            <div class="article-info">
+                <p class="article-author">Benoît Mace</p>
+                <p>lun. 4 juillet 2022 à 11:42 PM</p>
+            </div>
+            <figure class="article-img-container">
+                <img class="article-img" src="../assets/image/medusa-article.jpg" alt="illustration du mythe Médusa">
+                <figcaption>
+                    Image d'illustration du mythe de Médusa / Source illustration : Karen Nadine
+                </figcaption>
+            </figure>
+            <div class="article-body">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi vero voluptatem eveniet odit id ratione exercitationem atque. Nemo molestiae deserunt itaque repudiandae nesciunt earum sed? Maiores, aperiam. Perspiciatis, deleniti accusantium.
+                    Recusandae assumenda quod voluptas cumque doloribus, cupiditate quae eligendi id facilis ad ea quam accusantium suscipit velit doloremque maiores, sint tempora voluptatum dignissimos vitae dicta quia dolores. Pariatur, laudantium cupiditate?
+                    Reprehenderit rerum harum nostrum error veritatis, accusantium magni, possimus porro ducimus facilis, iure veniam totam doloribus dignissimos? Veniam quod ex dolorum itaque sed debitis odit, unde sint inventore, quos aut!
+                    Odio, provident. Assumenda, error quod magnam rem ea, accusantium eveniet perferendis veniam recusandae dolores asperiores commodi a iusto ipsa nisi architecto neque. Minus sunt nihil ab eius, fugiat odio officiis?
+                    Quis provident dolorum earum alias! Alias, modi? Voluptate, eligendi deleniti alias ipsa, corrupti expedita perspiciatis maiores quisquam accusantium ipsam neque vel sed. Fugit aliquam magni enim iusto, deserunt quo reiciendis.
+                    Ipsam consequatur mollitia tenetur porro ipsum qui omnis, quod magni nemo laboriosam quis error sequi, corrupti consectetur natus. Error odit iusto maiores fugiat magni veniam reprehenderit veritatis distinctio dolores sunt?
+                    Quia velit optio reprehenderit ex eaque odit provident totam cum. Facilis dignissimos sequi quasi sit impedit tenetur soluta, commodi aliquam saepe in a voluptate voluptas eum recusandae ab, enim magnam.
+                </p>
+            </div>
+        </article>
+    </section>
+    <hr>
+    <article class="nsl-section">
+        <div class="nsl-container">
+            <div class="title-ct">
+                <h3>Nos dernières actualités</h3>
+                <h2>Rejoignez notre liste d'abonnés pour recevoir du contenu exclusif</h2>
+            </div>
+            <form class="entry-container">
+                <div class="nsl-sub">
+                    <label for="nsl-subscription"></label>
+                    <input type="email" placeholder="Votre adresse Email" name="nsl-subscription" id="nsl-subscription">
+                    <a href="#" class="nsl-btn">Rejoindre</a>
+                </div>
+                <div class="nsl-agreement">
+                    <input type="checkbox">
+                    <p> J'accepte les termes et conditions d'utilisation des données </p>
+                </div>
+            </form>
+        </div>
+    </article>
+    <footer>
+        <div class="icon-btn">
+                <a href="https://fr-fr.facebook.com/" class="social"><i class="f-social fab fa-facebook-f"></i></a> 
+                <a href="https://www.instagram.com/?hl=fr" class="social"><i class="f-social fab fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/fr-FR" class="social"><i class="f-social fab fa-snapchat-ghost"></i></a>
+                <a href="https://twitter.com/?lang=fr" class="social"><i class="f-social fab fa-twitter"></i></a>
+        </div>
+        <div class="site-map">
+            <ul class="site-map-link">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../legendes.html">Legendes</a></li>
+                <li><a href="../a-propos.html">A Propos</a></li>
+                <li><a href="../inscription.html">Inscription</a></li>
+                <li><a href="../connexion.html">Connexion</a></li>
+                <li><a href="../nous-contacter.html">Contact</a></li>
+            </ul>
+            <p class="credit">Christopher Saury © <span class="year"></span> Tout droits réservés</p>
+        </div>
+    </footer>
+    <script src="../js/mobile_nav-footer.js"></script>
+</body>
+</html>
