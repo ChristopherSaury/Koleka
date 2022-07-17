@@ -10,6 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');/*CONTACT */
 /*********** CONTACT PAGE ******************************/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+/******************** Article ***********************/
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -96,9 +99,14 @@ html{
     width: 60px;
     height: 30px;
 }
-#mobile-nav .fa-bars,
-.fa-times{
+#mobile-nav .fa-bars{
     color: #E6D18E;
+    font-size: 34px;
+    position: relative;
+    z-index: 9999;
+}
+#mobile-nav .fa-times{
+    color: #222;
     font-size: 34px;
     position: relative;
     z-index: 9999;
@@ -108,7 +116,7 @@ html{
     align-items: center;
     list-style-type: none;
     position: absolute;
-    top: 80px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -859,8 +867,531 @@ footer .credit{
     background-color: #E6D18E;
     color: #222;
 }
+/******************** PAGE LEGENDE ********************/
+#legend{
+    padding: 80px 0;
+}
+#legend .dropdown-bkg{
+    width: 100%;
+    height: 60vh;
+    background: url('../assets/image/fantasy-castle.jpg')
+    center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#legend .country-menu{
+    background-color: rgba(34,34,34, 0.6);
+    width: 80%;
+    height: 40%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+#legend .country-entry{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#legend .country-entry .lg-selector{
+    width: 100%;
+    background-color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#legend .country-entry #lg-arrow{
+    transform: rotate(0deg);
+}
+
+#legend .country-entry #choice-menu{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    list-style-type: none;
+    background-color: #fff;
+    top: 70%;
+    box-shadow: 1px 5px 5px #222;
+    padding: 1%;
+}
+.close-lg-menu{
+    display: none;
+}
+#legend .country-entry #choice-menu a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+}
+#legend .country-entry #choice-menu .country-link:hover{
+    background-color: rgb(84, 157, 246);
+}
+#legend .country-entry #choice-menu .country-link{
+    padding-left: 4%;
+}
+#legend .country-entry #choice-menu .lg-continent-name{
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+/********** MONTHLY SELECTION  ******************/
+#legend .monthly-selection{
+    padding: 6% 0;
+}
+#legend .monthly-selection .legend-title{
+    margin-bottom: 6%;
+    padding-left: 2%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 50px;
+}
+#legend .monthly-selection .container-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#legend .monthly-selection .legend-container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+#legend .monthly-selection .legend-illustration{
+    width: 380px;
+    height: 380px;
+}
+#legend .lg-myth-cath{
+    text-decoration: none;
+    color: #a4713fbe;
+    font-family: 'Teko', sans-serif;
+    font-size: 15px;
+}
+#legend .lg-myth-title{
+    text-decoration: none;
+    color: #222;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    text-align: center;
+    width: 350px;
+}
+#legend .lg-myth-resume{
+    width: 300px;
+    height: auto;
+    text-decoration: none;
+    color: #222;
+    text-align: center;
+    font-size: 18px;
+}
 
 
+/********************* ARTICLE ************************/
+#mythPage{
+    padding-top: 80px;
+    padding-bottom: 4%;
+}
+#mythPage article{
+    padding-top: 4%;
+}
+#mythPage .article-info{
+    margin-bottom: 2%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+#mythPage .article-info p{
+    display: block;
+    padding-left: 15%;
+}
+#mythPage .article-info .article-author{
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+}
+#mythPage .myth-page-title{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 2%;
+}
+#mythPage .article-img-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mythPage .article-img{
+    width: 70%;
+    height: auto;
+}
+#mythPage article figcaption{
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+#mythPage .article-body{
+    margin-top: 4%;
+    padding: 0 15%;
+}
+/************* CONGO RDC *************************/
+#congoRdc{
+    padding: 80px 0 4% 0;
+}
+#congoRdc .congoRdc-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/democratic-republic-of-the-congo.png")
+    center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#congoRdc .congoRdc-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#congoRdc .congoRdc-content{
+    padding: 0 0 0 10%;
+}
+#congoRdc .congoRdc-content .congoRdc-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#congoRdc .congoRdc-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#congoRdc .congoRdc-content a:hover{
+    text-decoration: underline;
+}
+#congoRdc .congoRdc-content ul{
+    padding: 2% 0 0 4%;
+}
+#congoRdc .congoRdc-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#congoRdc .congoRdc-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*************** FRANCE ******************************/
+#france{
+    padding: 80px 0 4% 0;
+}
+#france .france-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/france.png")
+    center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#france .france-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#france .france-content{
+    padding: 0 0 0 10%;
+}
+#france .france-content .france-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#france .france-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#france .france-content a:hover{
+    text-decoration: underline;
+}
+#france .france-content ul{
+    padding: 2% 0 0 4%;
+}
+#france .france-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#france .france-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*************** GRECE *******************************/
+#greece{
+    padding: 80px 0 4% 0;
+}
+#greece .greece-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/greece.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#greece .greece-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#greece .greece-content{
+    padding: 0 0 0 10%;
+}
+#greece .greece-content .greece-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#greece .greece-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#greece .greece-content a:hover{
+    text-decoration: underline;
+}
+#greece .greece-content ul{
+    padding: 2% 0 0 4%;
+}
+#greece .greece-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#greece .greece-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*************** HAITI *******************************/
+#haiti{
+    padding: 80px 0 4% 0;
+}
+#haiti .haiti-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/haiti.png")
+    center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#haiti .haiti-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#haiti .haiti-content{
+    padding: 0 0 0 10%;
+}
+#haiti .haiti-content .haiti-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#haiti .haiti-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#haiti .haiti-content a:hover{
+    text-decoration: underline;
+}
+#haiti .haiti-content ul{
+    padding: 2% 0 0 4%;
+}
+#haiti .haiti-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#haiti .haiti-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*************** MEXIQUE *****************************/
+#mexico{
+    padding: 80px 0 4% 0;
+}
+#mexico .mexico-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/mexico.png")
+    center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#mexico .mexico-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#mexico .mexico-content{
+    padding: 0 0 0 10%;
+}
+#mexico .mexico-content .mexico-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#mexico .mexico-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#mexico .mexico-content a:hover{
+    text-decoration: underline;
+}
+#mexico .mexico-content ul{
+    padding: 2% 0 0 4%;
+}
+#mexico .mexico-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#mexico .mexico-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*************** TOGO ********************************/
+#togo{
+    padding: 80px 0 4% 0;
+}
+#togo .togo-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/togo.png")
+    center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#togo .togo-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#togo .togo-content{
+    padding: 0 0 0 10%;
+}
+#togo .togo-content .togo-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#togo .togo-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#togo .togo-content a:hover{
+    text-decoration: underline;
+}
+#togo .togo-content ul{
+    padding: 2% 0 0 4%;
+}
+#togo .togo-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#togo .togo-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*************** USA *********************************/
+#usa{
+    padding: 80px 0 4% 0;
+}
+#usa .usa-banner{
+    width: 100%;
+    height: 400px;
+    background: url("../assets/image/america.png")
+    center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 5px #222;
+}
+#usa .usa-title{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
+#usa .usa-content{
+    padding: 0 0 0 10%;
+}
+#usa .usa-content .usa-sub-title{
+    font-family: 'Cinzel', serif;
+}
+#usa .usa-content a{
+    text-decoration: none;
+    font-size: 17px;
+}
+#usa .usa-content a:hover{
+    text-decoration: underline;
+}
+#usa .usa-content ul{
+    padding: 2% 0 0 4%;
+}
+#usa .usa-sub-title{
+    padding-top: 5%;
+    font-size: 30px;
+    position: relative;
+}
+#usa .usa-sub-title::after{
+    content: '';
+    width: 88%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
 /*************** RESPONSIVE **************************/
 @media screen and (min-width: 280px ) and (max-width: 575px) {
     /***** NAVBAR *********/
@@ -928,6 +1459,26 @@ footer .credit{
     .shadow-people-intro{
         width: 300px;
     }
+    /******** PAGE LEGENDE ***********/
+    #legend .monthly-selection .legend-title{
+        font-size: 25px;
+    }
+    #legend .monthly-selection .legend-illustration{
+        width: 100%;
+        height: auto;
+    }
+    #legend .lg-myth-resume{
+        width: 280px;
+        padding: 2%;
+    }
+    #legend .lg-myth-title{
+        text-decoration: none;
+        color: #222;
+        font-family: 'Cinzel', serif;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
     /******* ABOUT PAGE **************/
     #about .koleka-intro{
         flex-direction: column;
@@ -990,6 +1541,13 @@ footer .credit{
         justify-content: center;
         gap: 20px;
     }
+    /************* ARTICLE *************/
+    #mythPage .myth-page-title{
+        font-size: 30px;
+    }
+    #mythPage article figcaption{
+        padding: 0 15%;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -1032,6 +1590,10 @@ footer .credit{
         width: 500px;
         padding: 5% 2% 0 2%;
         margin-top: 4%;
+    }
+    /******* PAGE LEGENDE ******/
+    #legend .monthly-selection .legend-title{
+        font-size: 35px;
     }
     /******* LOGIN PAGE ********/
     #login{
